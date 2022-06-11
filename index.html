@@ -7,18 +7,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="develop/css/style.css"/>
 </head>
-<body>
-    
-    <h1>Coding Quiz Challenge</h1>
 
-    <!--Start Button-->
-    <div class="start_button">
-        <button>Start!</button>
+<body>
+    <nav class="highschores"><a href="highscores.html">Highscores</a></nav>
+
+    <header> 
+    <h2>Time Left: </h2> 
+    <div id="timer">60</div>
+    </header>
+
+    <main>
+    <card>
+      <div id="start">
+        <h1>David's Coding Quiz!</h1>
+        <h3>Answer all the questions before the timer runs out! You have 60 seconds to complete.</h3>
+        <button id="begin" class="btn">Start!</button>
+      </div>
+
+
+  <div class="quiz-container">
+    <div id="questions-container" class="hide">
+    <h3 id="question"></h3>
+
+    <div class="buttons-container" >
+      <button class="btn" id="selectOne" correct-check=""></button>
+      <button class="btn" id="selectTwo" correct-check=""></button>
+      <button class="btn" id="selectThree" correct-check=""></button>
+      <button class="btn" id="selectFour" correct-check=""></button>
     </div>
 
-    <!--Explanation-->
-    
-    
+    </div>
+    </div>
+    </card>
+   
+    </main>
+    <script src="./develop/js/script.js"></script>
 
 </body>
 </html>
+
