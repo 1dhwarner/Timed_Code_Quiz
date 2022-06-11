@@ -153,7 +153,6 @@ const answerCheck = () => {
     let correct = buttonsContainer.getAttribute("correct-check");
     if (correct == "true") {
         startScore += 10;
-        // verify.textContent = "Correct!";
         console.log(startScore);
     } else {
         timeLeft -= 5
